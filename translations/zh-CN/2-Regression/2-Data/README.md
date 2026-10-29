@@ -6,8 +6,6 @@
 
 ## [课前测验](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [本课程也提供 R 语言版本！](../../../../2-Regression/2-Data/solution/R/lesson_2.html)
-
 ## 简介
 
 现在你已经准备好使用 Scikit-learn 进行机器学习模型构建的工具，能够开始对数据提出问题了。在处理数据并应用机器学习解决方案时，理解如何提出正确的问题以充分发挥数据集潜力非常重要。

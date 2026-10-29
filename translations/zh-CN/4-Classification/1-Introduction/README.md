@@ -21,8 +21,6 @@
 
 ## [课前测验](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [本课程也提供 R 版本！](../../../../4-Classification/1-Introduction/solution/R/lesson_10.html)
-
 ### 简介
 
 分类是机器学习研究者和数据科学家的基本活动之一。从简单的二元值分类（“这封邮件是垃圾邮件吗？”）到使用计算机视觉进行复杂的图像分类和分割，能够将数据分类并提出问题总是很有用的。

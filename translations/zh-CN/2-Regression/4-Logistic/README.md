@@ -4,8 +4,6 @@
 
 ## [课前测验](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [本课也提供 R 语言版本！](../../../../2-Regression/4-Logistic/solution/R/lesson_4.html)
-
 ## 简介
 
 在本回归课的最后一个单元中，我们将学习逻辑回归（Logistic Regression），这是基础且经典的机器学习技术之一。您可以使用此技术发现模式以预测二元类别。这个糖果是巧克力吗？这种疾病会传染吗？这个客户会选择这个产品吗？

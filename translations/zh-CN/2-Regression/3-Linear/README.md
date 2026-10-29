@@ -10,7 +10,6 @@
 > 信息图由 [Dasani Madipalli](https://twitter.com/dasani_decoded) 制作
 ## [课前测验](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [本课内容也提供 R 版本！](../../../../2-Regression/3-Linear/solution/R/lesson_3.html)
 ### 介绍
 
 迄今为止，你已经通过使用本课程将会继续使用的南瓜定价数据集了解了回归是什么。你也用 Matplotlib 对数据进行了可视化。

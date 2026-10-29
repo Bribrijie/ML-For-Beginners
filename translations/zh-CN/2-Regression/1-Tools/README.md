@@ -6,8 +6,6 @@
 
 ## [课前测验](https://ff-quizzes.netlify.app/en/ml/)
 
-> ### [本课也提供 R 语言版本！](../../../../2-Regression/1-Tools/solution/R/lesson_1.html)
-
 ## 介绍
 
 在这四节课中，您将学会如何构建回归模型。稍后我们将讨论它们的用途。但在开始之前，请确保您已经准备好适当的工具！
