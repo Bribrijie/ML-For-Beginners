@@ -1,11 +1,16 @@
-# Visualize some more Time Series
+# 可视化更多时间序列
 
-## Instructions
+## 说明
 
-You've begun to learn about Time Series Forecasting by looking at the type of data that requires this special modeling. You've visualized some data around energy. Now, look around for some other data that would benefit from Time Series Forecasting. Find three examples (try [Kaggle](https://kaggle.com) and [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/catalog/?WT.mc_id=academic-77952-leestott)) and create a notebook to visualize them. Notate any special characteristics they have (seasonality, abrupt changes, or other trends) in the notebook.
+你已经开始通过观察需要特殊建模的数据类型来学习时间序列预测。你已经可视化了一些关于能源的数据。现在，寻找一些其他可以从时间序列预测中受益的数据。找到三个例子（可以尝试 [Kaggle](https://kaggle.com) 和 [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/catalog/?WT.mc_id=academic-77952-leestott)），并创建一个笔记本来可视化这些数据。在笔记本中记录它们的任何特殊特性（季节性、突变或其他趋势）。
 
-## Rubric
+## 评分标准
 
-| Criteria | Exemplary                                              | Adequate                                             | Needs Improvement                                                                         |
-| -------- | ------------------------------------------------------ | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-|          | Three datasets are plotted and explained in a notebook | Two datasets are plotted and explained in a notebook | Few datasets are plotted or explained in a notebook or the data presented is insufficient |
+| 标准     | 卓越表现                                              | 合格表现                                             | 需要改进                                                                                 |
+| -------- | ----------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+|          | 在笔记本中绘制并解释了三个数据集                     | 在笔记本中绘制并解释了两个数据集                   | 在笔记本中绘制或解释的数据集较少，或者所展示的数据不足                                   |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。

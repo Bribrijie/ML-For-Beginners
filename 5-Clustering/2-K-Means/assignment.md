@@ -1,10 +1,16 @@
-# Try different clustering methods
+# 尝试不同的聚类方法
 
-## Instructions
+## 说明
 
-In this lesson you learned about K-Means clustering. Sometimes K-Means is not appropriate for your data. Create a notebook using data either from these lessons or from somewhere else (credit your source) and show a different clustering method NOT using K-Means. What did you learn? 
-## Rubric
+在本课中，你学习了 K-Means 聚类。有时 K-Means 并不适合你的数据。创建一个笔记本，使用本课中的数据或其他来源的数据（注明来源），并展示一种不同的聚类方法，而不是使用 K-Means。你学到了什么？
 
-| Criteria | Exemplary                                                       | Adequate                                                             | Needs Improvement            |
-| -------- | --------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------- |
-|          | A notebook is presented with a well-documented clustering model | A notebook is presented without good documentation and/or incomplete | Incomplete work is submitted |
+## 评分标准
+
+| 标准     | 卓越                                                         | 合格                                                         | 需要改进                  |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------- |
+|          | 提交了一个包含详细文档的聚类模型的笔记本                     | 提交了一个笔记本，但文档不够完善和/或内容不完整              | 提交的工作不完整          |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。

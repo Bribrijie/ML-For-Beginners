@@ -1,21 +1,26 @@
-# Build a web app to use your ML model
+# 构建一个使用您的机器学习模型的网页应用
 
-In this section of the curriculum, you will be introduced to an applied ML topic: how to save your Scikit-learn model as a file that can be used to make predictions within a web application. Once the model is saved, you'll learn how to use it in a web app built in Flask. You'll first create a model using some data that's all about UFO sightings! Then, you'll build a web app that will allow you to input a number of seconds with a latitude and a longitude value to predict which country reported seeing a UFO.
+在本课程的这一部分，您将学习一个应用型的机器学习主题：如何将您的 Scikit-learn 模型保存为一个文件，以便在网页应用中进行预测。一旦模型保存完成，您将学习如何在使用 Flask 构建的网页应用中使用它。您将首先使用一些关于 UFO 目击事件的数据创建一个模型！然后，您将构建一个网页应用，允许用户输入持续时间（秒数）、纬度和经度值，以预测哪个国家报告了看到 UFO。
 
-![UFO Parking](images/ufo.jpg)
+![UFO 停车场](../translated_images/zh-CN/ufo.9e787f5161da9d4d.webp)
 
-Photo by <a href="https://unsplash.com/@mdherren?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Herren</a> on <a href="https://unsplash.com/s/photos/ufo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+照片由 <a href="https://unsplash.com/@mdherren?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Herren</a> 提供，来自 <a href="https://unsplash.com/s/photos/ufo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-## Lessons
+## 课程
 
-1. [Build a Web App](1-Web-App/README.md)
+1. [构建一个网页应用](1-Web-App/README.md)
 
-## Credits
+## 致谢
 
-"Build a Web App" was written with ♥️ by [Jen Looper](https://twitter.com/jenlooper).
+“构建一个网页应用”由 [Jen Looper](https://twitter.com/jenlooper) 倾情撰写。
 
-♥️ The quizzes were written by Rohan Raj.
+♥️ 测验由 Rohan Raj 编写。
 
-The dataset is sourced from [Kaggle](https://www.kaggle.com/NUFORC/ufo-sightings).
+数据集来源于 [Kaggle](https://www.kaggle.com/NUFORC/ufo-sightings)。
 
-The web app architecture was suggested in part by [this article](https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4) and [this repo](https://github.com/abhinavsagar/machine-learning-deployment) by Abhinav Sagar.
+网页应用架构部分参考了 [这篇文章](https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4) 和 [这个仓库](https://github.com/abhinavsagar/machine-learning-deployment)，作者为 Abhinav Sagar。
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而产生的任何误解或误读不承担责任。

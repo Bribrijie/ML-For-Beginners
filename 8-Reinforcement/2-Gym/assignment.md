@@ -1,43 +1,48 @@
-# Train Mountain Car
+# 训练山地车
 
-[OpenAI Gym](http://gym.openai.com) has been designed in such a way that all environments provide the same API - i.e. the same methods `reset`, `step` and `render`, and the same abstractions of **action space** and **observation space**. Thus is should be possible to adapt the same reinforcement learning algorithms to different environments with minimal code changes.
+[OpenAI Gym](http://gym.openai.com) 的设计使得所有环境都提供相同的 API——即相同的方法 `reset`、`step` 和 `render`，以及相同的 **动作空间** 和 **观察空间** 抽象。因此，可以通过最小的代码更改，将相同的强化学习算法适配到不同的环境中。
 
-## A Mountain Car Environment
+## 山地车环境
 
-[Mountain Car environment](https://gym.openai.com/envs/MountainCar-v0/) contains a car stuck in a valley:
+[山地车环境](https://gym.openai.com/envs/MountainCar-v0/) 包含一辆被困在山谷中的小车：
 
-<img src="images/mountaincar.png" width="300"/>
+目标是通过以下动作之一，在每一步中让小车驶出山谷并夺取旗帜：
 
-The goal is to get out of the valley and capture the flag, by doing at each step one of the following actions:
-
-| Value | Meaning |
+| 值 | 含义 |
 |---|---|
-| 0 | Accelerate to the left |
-| 1 | Do not accelerate |
-| 2 | Accelerate to the right |
+| 0 | 向左加速 |
+| 1 | 不加速 |
+| 2 | 向右加速 |
 
-The main trick of this problem is, however, that the car's engine is not strong enough to scale the mountain in a single pass. Therefore, the only way to succeed is to drive back and forth to build up momentum.
+然而，这个问题的主要难点在于，小车的引擎动力不足，无法一次性爬上山顶。因此，唯一的成功方法是通过来回移动来积累动能。
 
-Observation space consists of just two values:
+观察空间仅包含两个值：
 
-| Num | Observation  | Min | Max |
+| 编号 | 观察值  | 最小值 | 最大值 |
 |-----|--------------|-----|-----|
-|  0  | Car Position | -1.2| 0.6 |
-|  1  | Car Velocity | -0.07 | 0.07 |
+|  0  | 小车位置 | -1.2 | 0.6 |
+|  1  | 小车速度 | -0.07 | 0.07 |
 
-Reward system for the mountain car is rather tricky:
+山地车的奖励系统相当复杂：
 
- * Reward of 0 is awarded if the agent reached the flag (position = 0.5) on top of the mountain.
- * Reward of -1 is awarded if the position of the agent is less than 0.5.
+ * 如果智能体到达山顶的旗帜位置（位置 = 0.5），奖励为 0。
+ * 如果智能体的位置小于 0.5，奖励为 -1。
 
-Episode terminates if the car position is more than 0.5, or episode length is greater than 200.
-## Instructions
+当小车位置超过 0.5 或者回合长度超过 200 时，回合终止。
 
-Adapt our reinforcement learning algorithm to solve the mountain car problem. Start with existing [notebook.ipynb](notebook.ipynb) code, substitute new environment, change state discretization functions, and try to make existing algorithm to train with minimal code modifications. Optimize the result by adjusting hyperparameters.
+## 指导说明
 
-> **Note**: Hyperparameters adjustment is likely to be needed to make algorithm converge. 
-## Rubric
+将我们的强化学习算法适配到山地车问题中。以现有的 [notebook.ipynb](notebook.ipynb) 代码为起点，替换新的环境，修改状态离散化函数，并尝试通过最小的代码修改使现有算法能够进行训练。通过调整超参数来优化结果。
 
-| Criteria | Exemplary | Adequate | Needs Improvement |
+> **注意**: 可能需要调整超参数以使算法收敛。
+
+## 评分标准
+
+| 标准 | 优秀 | 合格 | 需要改进 |
 | -------- | --------- | -------- | ----------------- |
-|          | Q-Learning algorithm is successfully adapted from CartPole example, with minimal code modifications, which is able to solve the problem of capturing the flag under 200 steps. | A new Q-Learning algorithm has been adopted from the Internet, but is well-documented; or existing algorithm adopted, but does not reach desired results | Student was not able to successfully adopt any algorithm, but has mede substantial steps towards solution (implemented state discretization, Q-Table data structure, etc.) |
+|          | 成功从 CartPole 示例中适配 Q-Learning 算法，代码修改最小，能够在 200 步内解决夺旗问题。 | 从网上采用了新的 Q-Learning 算法，但文档记录良好；或者采用了现有算法，但未达到预期结果。 | 未能成功采用任何算法，但在解决方案上迈出了重要一步（实现了状态离散化、Q 表数据结构等）。 |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。对于因使用本翻译而引起的任何误解或误读，我们概不负责。

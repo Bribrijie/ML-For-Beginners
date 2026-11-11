@@ -1,25 +1,32 @@
-# A More Realistic World
+# 一个更真实的世界
 
-In our situation, Peter was able to move around almost without getting tired or hungry. In a more realistic world, we has to sit down and rest from time to time, and also to feed himself. Let's make our world more realistic, by implementing the following rules:
+在我们的场景中，Peter几乎可以不感到疲惫或饥饿地四处移动。在一个更真实的世界中，他需要时不时地坐下来休息，还需要进食。让我们通过实现以下规则，使我们的世界更加真实：
 
-1. By moving from one place to another, Peter loses **energy** and gains some **fatigue**.
-2. Peter can gain more energy by eating apples.
-3. Peter can get rid of fatigue by resting under the tree or on the grass (i.e. walking into a board location with a tree or grass - green field)
-4. Peter needs to find and kill the wolf
-5. In order to kill the wolf, Peter needs to have certain levels of energy and fatigue, otherwise he loses the battle.
-## Instructions
+1. 每次从一个地方移动到另一个地方，Peter会失去**能量**并增加一些**疲劳**。
+2. Peter可以通过吃苹果来获得更多能量。
+3. Peter可以通过在树下或草地上休息来消除疲劳（即走到棋盘上有树或草的地方——绿色区域）。
+4. Peter需要找到并杀死狼。
+5. 为了杀死狼，Peter需要达到一定的能量和疲劳水平，否则他会输掉战斗。
 
-Use the original [notebook.ipynb](notebook.ipynb) notebook as a starting point for your solution.
+## 指导
 
-Modify the reward function above according to the rules of the game, run the reinforcement learning algorithm to learn the best strategy for winning the game, and compare the results of random walk with your algorithm in terms of number of games won and lost.
+使用原始的 [notebook.ipynb](notebook.ipynb) 笔记本作为解决方案的起点。
 
-> **Note**: In your new world, the state is more complex, and in addition to human position also includes fatigue and energy levels. You may chose to represent the state as a tuple (Board,energy,fatigue), or define a class for the state (you may also want to derive it from `Board`), or even modify the original `Board` class inside [rlboard.py](rlboard.py).
+根据游戏规则修改上述奖励函数，运行强化学习算法以学习赢得游戏的最佳策略，并将随机游走的结果与您的算法进行比较，比较赢得和输掉的游戏数量。
 
-In your solution, please keep the code responsible for random walk strategy, and compare the results of your algorithm with random walk at the end.
+> **Note**: 在您的新世界中，状态更加复杂，除了人的位置，还包括疲劳和能量水平。您可以选择将状态表示为一个元组 (Board,energy,fatigue)，或者为状态定义一个类（您可能还希望从 `Board` 派生），甚至修改原始的 `Board` 类（位于 [rlboard.py](rlboard.py) 中）。
 
-> **Note**: You may need to adjust hyperparameters to make it work, especially the number of epochs. Because the success of the game (fighting the wolf) is a rare event, you can expect much longer training time.
-## Rubric
+在您的解决方案中，请保留负责随机游走策略的代码，并在最后将您的算法结果与随机游走进行比较。
 
-| Criteria | Exemplary                                                                                                                                                                                             | Adequate                                                                                                                                                                                | Needs Improvement                                                                                                                          |
+> **Note**: 您可能需要调整超参数以使其正常工作，尤其是训练的轮数。由于游戏的成功（与狼战斗）是一个罕见事件，您可以预期更长的训练时间。
+
+## 评分标准
+
+| 标准     | 卓越表现                                                                                                                                                                                             | 合格表现                                                                                                                                                                                | 需要改进                                                                                                                          |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-|          | A notebook is presented with the definition of new world rules, Q-Learning algorithm and some textual explanations. Q-Learning is able to significantly improve the results comparing to random walk. | Notebook is presented, Q-Learning is implemented and improves results comparing to random walk, but not significantly; or notebook is poorly documented and code is not well-structured | Some attempt to re-define the rules of the world are made, but Q-Learning algorithm does not work, or reward function is not fully defined |
+|          | 提供了一个笔记本，其中定义了新的世界规则、Q学习算法以及一些文字说明。Q学习能够显著改善与随机游走相比的结果。                                                                                         | 提供了笔记本，Q学习已实现并改善了与随机游走相比的结果，但改善不显著；或者笔记本文档较差，代码结构不够清晰。                                                                               | 对重新定义世界规则做了一些尝试，但Q学习算法未能正常工作，或者奖励函数未完全定义。                                                                                           |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。

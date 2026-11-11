@@ -1,11 +1,16 @@
-# Try a different model
+# 尝试不同的模型
 
-## Instructions
+## 说明
 
-Now that you have built one web app using a trained Regression model, use one of the models from an earlier Regression lesson to redo this web app. You can keep the style or design it differently to reflect the pumpkin data. Be careful to change the inputs to reflect your model's training method.
+现在您已经使用训练好的回归模型构建了一个网页应用，请使用之前回归课程中的一个模型重新制作这个网页应用。您可以保持原有的风格，也可以设计不同的样式以体现南瓜数据。请注意更改输入以匹配您模型的训练方法。
 
-## Rubric
+## 评分标准
 
-| Criteria                   | Exemplary                                                 | Adequate                                                  | Needs Improvement                      |
-| -------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------- |
-| | The web app runs as expected and is deployed to the cloud | The web app contains flaws or exhibits unexpected results | The web app does not function properly |
+| 标准                       | 卓越表现                                                 | 合格表现                                                 | 需要改进                              |
+| -------------------------- | ------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------- |
+| | 网页应用运行正常并成功部署到云端                     | 网页应用存在缺陷或表现出意外结果                         | 网页应用无法正常运行                   |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。因使用本翻译而导致的任何误解或误读，我们概不负责。

@@ -1,84 +1,85 @@
-# Quizzes
+# 测验
 
-These quizzes are the pre- and post-lecture quizzes for the ML curriculum at https://aka.ms/ml-beginners
+这些测验是 ML 课程（https://aka.ms/ml-beginners）的课前和课后测验。
 
-## Project setup
+## 项目设置
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 编译并热加载用于开发
 
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译并压缩用于生产
 
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 检查并修复文件
 
 ```
 npm run lint
 ```
 
-### Customize configuration
+### 自定义配置
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+请参阅 [配置参考](https://cli.vuejs.org/config/)。
 
-Credits: Thanks to the original version of this quiz app: https://github.com/arpan45/simple-quiz-vue
+致谢：感谢此测验应用的原始版本：https://github.com/arpan45/simple-quiz-vue
 
-## Deploying to Azure
+## 部署到 Azure
 
-Here’s a step-by-step guide to help you get started:
+以下是帮助您入门的分步指南：
 
-1. Fork the a GitHub Repository
-Ensure your static web app code is in your GitHub repository. Fork this repository.
+1. Fork 一个 GitHub 仓库  
+确保您的静态 Web 应用代码在您的 GitHub 仓库中。Fork 此仓库。
 
-2. Create an Azure Static Web App
-- Create and [Azure account](http://azure.microsoft.com)
-- Go to the [Azure portal](https://portal.azure.com) 
-- Click on “Create a resource” and search for “Static Web App”.
-- Click “Create”.
+2. 创建一个 Azure 静态 Web 应用  
+- 创建一个 [Azure 账户](http://azure.microsoft.com)  
+- 访问 [Azure 门户](https://portal.azure.com)  
+- 点击“创建资源”，搜索“静态 Web 应用”。  
+- 点击“创建”。
 
-3. Configure the Static Web App
-- Basics: Subscription: Select your Azure subscription.
-- Resource Group: Create a new resource group or use an existing one.
-- Name: Provide a name for your static web app.
-- Region: Choose the region closest to your users.
+3. 配置静态 Web 应用  
+- 基本信息：  
+  - 订阅：选择您的 Azure 订阅。  
+  - 资源组：创建一个新的资源组或使用现有的资源组。  
+  - 名称：为您的静态 Web 应用提供一个名称。  
+  - 区域：选择离您的用户最近的区域。
 
-- #### Deployment Details:
-- Source: Select “GitHub”.
-- GitHub Account: Authorize Azure to access your GitHub account.
-- Organization: Select your GitHub organization.
-- Repository: Choose the repository containing your static web app.
-- Branch: Select the branch you want to deploy from.
+- #### 部署详情：  
+  - 来源：选择“GitHub”。  
+  - GitHub 账户：授权 Azure 访问您的 GitHub 账户。  
+  - 组织：选择您的 GitHub 组织。  
+  - 仓库：选择包含静态 Web 应用的仓库。  
+  - 分支：选择您希望部署的分支。
 
-- #### Build Details:
-- Build Presets: Choose the framework your app is built with (e.g., React, Angular, Vue, etc.).
-- App Location: Specify the folder containing your app code (e.g., / if it’s in the root).
-- API Location: If you have an API, specify its location (optional).
-- Output Location: Specify the folder where the build output is generated (e.g., build or dist).
+- #### 构建详情：  
+  - 构建预设：选择您的应用所使用的框架（例如 React、Angular、Vue 等）。  
+  - 应用位置：指定包含应用代码的文件夹（例如，如果在根目录则为 /）。  
+  - API 位置：如果有 API，请指定其位置（可选）。  
+  - 输出位置：指定生成构建输出的文件夹（例如 build 或 dist）。
 
-4. Review and Create
-Review your settings and click “Create”. Azure will set up the necessary resources and create a GitHub Actions workflow in your repository.
+4. 审核并创建  
+审核您的设置并点击“创建”。Azure 将设置必要的资源，并在您的仓库中创建一个 GitHub Actions 工作流。
 
-5. GitHub Actions Workflow
-Azure will automatically create a GitHub Actions workflow file in your repository (.github/workflows/azure-static-web-apps-<name>.yml). This workflow will handle the build and deployment process.
+5. GitHub Actions 工作流  
+Azure 会自动在您的仓库中创建一个 GitHub Actions 工作流文件（.github/workflows/azure-static-web-apps-<name>.yml）。此工作流将处理构建和部署过程。
 
-6. Monitor the Deployment
-Go to the “Actions” tab in your GitHub repository.
-You should see a workflow running. This workflow will build and deploy your static web app to Azure.
-Once the workflow completes, your app will be live on the provided Azure URL.
+6. 监控部署  
+进入 GitHub 仓库中的“Actions”标签页。  
+您应该会看到一个工作流正在运行。此工作流将构建并部署您的静态 Web 应用到 Azure。  
+工作流完成后，您的应用将上线并可通过提供的 Azure URL 访问。
 
-### Example Workflow File
+### 示例工作流文件
 
-Here’s an example of what the GitHub Actions workflow file might look like:
-name: Azure Static Web Apps CI/CD
+以下是 GitHub Actions 工作流文件的示例：  
+name: Azure Static Web Apps CI/CD  
 ```
 on:
   push:
@@ -107,6 +108,11 @@ jobs:
           output_location: "dist" #Built app content directory - optional
 ```
 
-### Additional Resources
-- [Azure Static Web Apps Documentation](https://learn.microsoft.com/azure/static-web-apps/getting-started)
-- [GitHub Actions Documentation](https://docs.github.com/actions/use-cases-and-examples/deploying/deploying-to-azure-static-web-app)
+### 其他资源  
+- [Azure 静态 Web 应用文档](https://learn.microsoft.com/azure/static-web-apps/getting-started)  
+- [GitHub Actions 文档](https://docs.github.com/actions/use-cases-and-examples/deploying/deploying-to-azure-static-web-app)  
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于重要信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。

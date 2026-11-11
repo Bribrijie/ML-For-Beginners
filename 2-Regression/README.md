@@ -1,40 +1,45 @@
-# Regression models for machine learning
-## Regional topic: Regression models for pumpkin prices in North America 🎃
+# 机器学习中的回归模型
+## 区域主题：北美地区南瓜价格的回归模型 🎃
 
-In North America, pumpkins are often carved into scary faces for Halloween. Let's discover more about these fascinating vegetables!
+在北美，南瓜常被雕刻成恐怖的面孔用于庆祝万圣节。让我们一起来探索这些迷人的蔬菜吧！
 
-![jack-o-lanterns](./images/jack-o-lanterns.jpg)
-> Photo by <a href="https://unsplash.com/@teutschmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Beth Teutschmann</a> on <a href="https://unsplash.com/s/photos/jack-o-lanterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+![jack-o-lanterns](../translated_images/zh-CN/jack-o-lanterns.181c661a9212457d.webp)
+> 图片由 <a href="https://unsplash.com/@teutschmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Beth Teutschmann</a> 提供，来自 <a href="https://unsplash.com/s/photos/jack-o-lanterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
-## What you will learn
+## 你将学到什么
 
-[![Introduction to Regression](https://img.youtube.com/vi/5QnJtDad4iQ/0.jpg)](https://youtu.be/5QnJtDad4iQ "Regression Introduction video - Click to Watch!")
-> 🎥 Click the image above for a quick introduction video to this lesson
+[![回归简介](https://img.youtube.com/vi/5QnJtDad4iQ/0.jpg)](https://youtu.be/5QnJtDad4iQ "回归简介视频 - 点击观看！")
+> 🎥 点击上方图片观看本课的快速介绍视频
 
-The lessons in this section cover types of regression in the context of machine learning. Regression models can help determine the _relationship_ between variables. This type of model can predict values such as length, temperature, or age, thus uncovering relationships between variables as it analyzes data points.
+本节课程涵盖了机器学习中回归的类型。回归模型可以帮助确定变量之间的_关系_。这种模型可以预测诸如长度、温度或年龄等值，从而在分析数据点时揭示变量之间的关系。
 
-In this series of lessons, you'll discover the differences between linear and logistic regression, and when you should prefer one over the other.
+在这一系列课程中，你将了解线性回归和逻辑回归的区别，以及在什么情况下应该选择其中一种。
 
-[![ML for beginners - Introduction to Regression models for Machine Learning](https://img.youtube.com/vi/XA3OaoW86R8/0.jpg)](https://youtu.be/XA3OaoW86R8 "ML for beginners - Introduction to Regression models for Machine Learning")
+[![机器学习初学者 - 回归模型简介](https://img.youtube.com/vi/XA3OaoW86R8/0.jpg)](https://youtu.be/XA3OaoW86R8 "机器学习初学者 - 回归模型简介")
 
-> 🎥 Click the image above for a short video introducing regression models.
+> 🎥 点击上方图片观看关于回归模型的简短介绍视频。
 
-In this group of lessons, you will get set up to begin machine learning tasks, including configuring Visual Studio Code to manage notebooks, the common environment for data scientists. You will discover Scikit-learn, a library for machine learning, and you will build your first models, focusing on Regression models in this chapter.
+在这一组课程中，你将准备开始机器学习任务，包括配置 Visual Studio Code 来管理笔记本，这是数据科学家常用的环境。你将了解 Scikit-learn，一个用于机器学习的库，并在本章中构建你的第一个模型，重点是回归模型。
 
-> There are useful low-code tools that can help you learn about working with regression models. Try [Azure ML for this task](https://docs.microsoft.com/learn/modules/create-regression-model-azure-machine-learning-designer/?WT.mc_id=academic-77952-leestott)
+> 有一些实用的低代码工具可以帮助你学习如何使用回归模型。试试 [Azure ML 来完成这个任务](https://docs.microsoft.com/learn/modules/create-regression-model-azure-machine-learning-designer/?WT.mc_id=academic-77952-leestott)
 
-### Lessons
+### 课程
 
-1. [Tools of the trade](1-Tools/README.md)
-2. [Managing data](2-Data/README.md)
-3. [Linear and polynomial regression](3-Linear/README.md)
-4. [Logistic regression](4-Logistic/README.md)
+1. [工具介绍](1-Tools/README.md)
+2. [数据管理](2-Data/README.md)
+3. [线性回归和多项式回归](3-Linear/README.md)
+4. [逻辑回归](4-Logistic/README.md)
 
 ---
-### Credits
+### 致谢
 
-"ML with regression" was written with ♥️ by [Jen Looper](https://twitter.com/jenlooper)
+"回归中的机器学习" 由 [Jen Looper](https://twitter.com/jenlooper) ♥️ 编写
 
-♥️ Quiz contributors include: [Muhammad Sakib Khan Inan](https://twitter.com/Sakibinan) and [Ornella Altunyan](https://twitter.com/ornelladotcom)
+♥️ 测验贡献者包括：[Muhammad Sakib Khan Inan](https://twitter.com/Sakibinan) 和 [Ornella Altunyan](https://twitter.com/ornelladotcom)
 
-The pumpkin dataset is suggested by [this project on Kaggle](https://www.kaggle.com/usda/a-year-of-pumpkin-prices) and its data is sourced from the [Specialty Crops Terminal Markets Standard Reports](https://www.marketnews.usda.gov/mnp/fv-report-config-step1?type=termPrice) distributed by the United States Department of Agriculture. We have added some points around color based on variety to normalize the distribution. This data is in the public domain.
+南瓜数据集由 [Kaggle 上的这个项目](https://www.kaggle.com/usda/a-year-of-pumpkin-prices) 提供，其数据来源于美国农业部发布的 [Specialty Crops Terminal Markets Standard Reports](https://www.marketnews.usda.gov/mnp/fv-report-config-step1?type=termPrice)。我们根据品种添加了一些关于颜色的点以规范分布。这些数据属于公共领域。
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而产生的任何误解或误读不承担责任。

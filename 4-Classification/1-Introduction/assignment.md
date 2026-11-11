@@ -1,11 +1,16 @@
-# Explore classification methods
+# 探索分类方法
 
-## Instructions
+## 说明
 
-In [Scikit-learn documentation](https://scikit-learn.org/stable/supervised_learning.html) you'll find a large list of ways to classify data. Do a little scavenger hunt in these docs: your goals is to look for classification methods and match a dataset in this curriculum, a question you can ask of it, and a technique of classification. Create a spreadsheet or table in a .doc file and explain how the dataset would work with the classification algorithm.
+在 [Scikit-learn 文档](https://scikit-learn.org/stable/supervised_learning.html) 中，你会发现大量用于分类数据的方法。请在这些文档中进行一次小型寻宝活动：你的目标是寻找分类方法，并将其与本课程中的一个数据集、一种可以提出的问题以及一种分类技术进行匹配。创建一个电子表格或 .doc 文件中的表格，并解释该数据集如何与分类算法配合使用。
 
-## Rubric
+## 评分标准
 
-| Criteria | Exemplary                                                                                                                           | Adequate                                                                                                                            | Needs Improvement                                                                                                                                             |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|          | a document is presented overviewing 5 algorithms alongside a classification technique. The overview is well-explained and detailed. | a document is presented overviewing 3 algorithms alongside a classification technique. The overview is well-explained and detailed. | a document is presented overviewing fewer than three algorithms alongside a classification technique and the overview is neither well-explained nor detailed. |
+| 标准     | 卓越                                                                                                                           | 合格                                                                                                                           | 需要改进                                                                                                                                             |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+|          | 提交的文档概述了 5 种算法及其分类技术。概述解释清晰且详细。                                                                     | 提交的文档概述了 3 种算法及其分类技术。概述解释清晰且详细。                                                                     | 提交的文档概述了少于 3 种算法及其分类技术，且概述既不清晰也不详细。                                                                                   |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而产生的任何误解或误读不承担责任。

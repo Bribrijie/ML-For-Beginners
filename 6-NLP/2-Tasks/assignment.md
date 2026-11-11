@@ -1,11 +1,16 @@
-# Make a Bot talk back
+# 让机器人回应
 
-## Instructions
+## 说明
 
-In the past few lessons, you programmed a basic bot with whom to chat. This bot gives random answers until you say 'bye'. Can you make the answers a little less random, and trigger answers if you say specific things, like 'why' or 'how'? Think a bit how machine learning might make this type of work less manual as you extend your bot. You can use NLTK or TextBlob libraries to make your tasks easier.
+在之前的课程中，你编写了一个基础的聊天机器人。这个机器人会随机回答，直到你说“bye”。你能让它的回答不那么随机，并在你说特定内容（比如“为什么”或“怎么”）时触发特定回答吗？思考一下，机器学习如何让这种工作变得更自动化，同时扩展你的机器人。你可以使用 NLTK 或 TextBlob 库来简化任务。
 
-## Rubric
+## 评分标准
 
-| Criteria | Exemplary                                     | Adequate                                         | Needs Improvement       |
-| -------- | --------------------------------------------- | ------------------------------------------------ | ----------------------- |
-|          | A new bot.py file is presented and documented | A new bot file is presented but it contains bugs | A file is not presented |
+| 标准     | 卓越表现                                   | 合格表现                                     | 需要改进               |
+| -------- | ------------------------------------------ | -------------------------------------------- | ---------------------- |
+|          | 提供了一个新的 bot.py 文件并进行了文档记录 | 提供了一个新的 bot 文件，但存在一些问题       | 未提供文件             |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。因使用本翻译而导致的任何误解或误读，我们概不负责。

@@ -1,10 +1,16 @@
-# A new ARIMA model
+# 一个新的ARIMA模型
 
-## Instructions
+## 说明
 
-Now that you have built an ARIMA model, build a new one with fresh data (try one of [these datasets from Duke](http://www2.stat.duke.edu/~mw/ts_data_sets.html). Annotate your work in a notebook, visualize the data and your model, and test its accuracy using MAPE.
-## Rubric
+现在您已经构建了一个ARIMA模型，请使用新的数据集构建一个新的模型（可以尝试使用[杜克大学的这些数据集](http://www2.stat.duke.edu/~mw/ts_data_sets.html)）。在笔记本中记录您的工作，可视化数据和模型，并使用MAPE测试其准确性。
 
-| Criteria | Exemplary                                                                                                           | Adequate                                                 | Needs Improvement                   |
+## 评分标准
+
+| 标准     | 卓越                                                                                                               | 合格                                                     | 需要改进                             |
 | -------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------- |
-|          | A notebook is presented with a new ARIMA model built, tested and explained with visualizations and accuracy stated. | The notebook presented is not annotated or contains bugs | An incomplete notebook is presented |
+|          | 提交的笔记本中包含一个新的ARIMA模型，经过测试并通过可视化和准确性说明进行解释。                                     | 提交的笔记本未进行注释或存在错误                         | 提交的笔记本不完整                  |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。

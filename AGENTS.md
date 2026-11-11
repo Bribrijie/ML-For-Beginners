@@ -1,17 +1,17 @@
 # AGENTS.md
 
-## Project Overview
+## 项目概述
 
-This is **Machine Learning for Beginners**, a comprehensive 12-week, 26-lesson curriculum covering classic machine learning concepts using Python (primarily with Scikit-learn) and R. The repository is designed as a self-paced learning resource with hands-on projects, quizzes, and assignments. Each lesson explores ML concepts through real-world data from various cultures and regions worldwide.
+这是**机器学习入门**，一个全面的12周、26课的课程体系，涵盖使用Python（主要是Scikit-learn）和R的经典机器学习概念。该仓库设计为一个自学资源，包含实践项目、测验和作业。每节课通过来自世界各地不同文化和地区的真实数据探索机器学习概念。
 
-Key components:
-- **Educational Content**: 26 lessons covering introduction to ML, regression, classification, clustering, NLP, time series, and reinforcement learning
-- **Quiz Application**: Vue.js-based quiz app with pre- and post-lesson assessments
-- **Multi-language Support**: Automated translations to 40+ languages via GitHub Actions
-- **Dual Language Support**: Lessons available in both Python (Jupyter notebooks) and R (R Markdown files)
-- **Project-Based Learning**: Each topic includes practical projects and assignments
+关键组成部分：
+- **教育内容**：26节课，涵盖机器学习简介、回归、分类、聚类、自然语言处理（NLP）、时间序列和强化学习
+- **测验应用**：基于Vue.js的测验应用，提供课前和课后评估
+- **多语言支持**：通过GitHub Actions自动翻译成40多种语言
+- **双语言支持**：课程内容同时提供Python（Jupyter笔记本）和R（R Markdown文件）
+- **基于项目的学习**：每个主题都包含实践项目和作业
 
-## Repository Structure
+## 仓库结构
 
 ```
 ML-For-Beginners/
@@ -29,18 +29,18 @@ ML-For-Beginners/
 └── sketchnotes/       # Visual learning aids
 ```
 
-Each lesson folder typically contains:
-- `README.md` - Main lesson content
-- `notebook.ipynb` - Python Jupyter notebook
-- `solution/` - Solution code (Python and R versions)
-- `assignment.md` - Practice exercises
-- `images/` - Visual resources
+每个课程文件夹通常包含：
+- `README.md` - 主要课程内容
+- `notebook.ipynb` - Python Jupyter笔记本
+- `solution/` - 解决方案代码（Python和R版本）
+- `assignment.md` - 练习题
+- `images/` - 可视化资源
 
-## Setup Commands
+## 设置命令
 
-### For Python Lessons
+### 针对Python课程
 
-Most lessons use Jupyter notebooks. Install required dependencies:
+大多数课程使用Jupyter笔记本。安装所需依赖项：
 
 ```bash
 # Install Python 3.8+ if not already installed
@@ -57,9 +57,9 @@ pip install scikit-learn pandas numpy matplotlib seaborn
 pip install flask
 ```
 
-### For R Lessons
+### 针对R课程
 
-R lessons are in `solution/R/` folders as `.rmd` or `.ipynb` files:
+R课程位于`solution/R/`文件夹中，以`.rmd`或`.ipynb`文件形式存在：
 
 ```bash
 # Install R and required packages
@@ -67,18 +67,18 @@ R lessons are in `solution/R/` folders as `.rmd` or `.ipynb` files:
 install.packages(c("tidyverse", "tidymodels", "caret"))
 ```
 
-### For Quiz Application
+### 针对测验应用
 
-The quiz app is a Vue.js application located in the `quiz-app/` directory:
+测验应用是一个位于`quiz-app/`目录中的Vue.js应用：
 
 ```bash
 cd quiz-app
 npm install
 ```
 
-### For Documentation Site
+### 针对文档站点
 
-To run the documentation locally:
+本地运行文档：
 
 ```bash
 # Install Docsify
@@ -90,31 +90,31 @@ docsify serve
 # Access at http://localhost:3000
 ```
 
-## Development Workflow
+## 开发工作流程
 
-### Working with Lesson Notebooks
+### 使用课程笔记本
 
-1. Navigate to the lesson directory (e.g., `2-Regression/1-Tools/`)
-2. Open the Jupyter notebook:
+1. 进入课程目录（例如，`2-Regression/1-Tools/`）
+2. 打开Jupyter笔记本：
    ```bash
    jupyter notebook notebook.ipynb
    ```
-3. Work through the lesson content and exercises
-4. Check solutions in the `solution/` folder if needed
+3. 学习课程内容并完成练习
+4. 如有需要，可查看`solution/`文件夹中的解决方案
 
-### Python Development
+### Python开发
 
-- Lessons use standard Python data science libraries
-- Jupyter notebooks for interactive learning
-- Solution code available in each lesson's `solution/` folder
+- 课程使用标准的Python数据科学库
+- Jupyter笔记本用于交互式学习
+- 每节课的`solution/`文件夹中提供解决方案代码
 
-### R Development
+### R开发
 
-- R lessons are in `.rmd` format (R Markdown)
-- Solutions located in `solution/R/` subdirectories
-- Use RStudio or Jupyter with R kernel to run R notebooks
+- R课程以`.rmd`格式（R Markdown）提供
+- 解决方案位于`solution/R/`子目录中
+- 使用RStudio或带有R内核的Jupyter运行R笔记本
 
-### Quiz Application Development
+### 测验应用开发
 
 ```bash
 cd quiz-app
@@ -130,9 +130,9 @@ npm run build
 npm run lint
 ```
 
-## Testing Instructions
+## 测试说明
 
-### Quiz Application Testing
+### 测验应用测试
 
 ```bash
 cd quiz-app
@@ -144,111 +144,111 @@ npm run lint
 npm run build
 ```
 
-**Note**: This is primarily an educational curriculum repository. There are no automated tests for lesson content. Validation is done through:
-- Completing lesson exercises
-- Running notebook cells successfully
-- Checking output against expected results in solutions
+**注意**：这是一个主要用于教育的课程仓库。课程内容没有自动化测试。验证通过以下方式完成：
+- 完成课程练习
+- 成功运行笔记本单元格
+- 将输出与解决方案中的预期结果进行比较
 
-## Code Style Guidelines
+## 代码风格指南
 
-### Python Code
-- Follow PEP 8 style guidelines
-- Use clear, descriptive variable names
-- Include comments for complex operations
-- Jupyter notebooks should have markdown cells explaining concepts
+### Python代码
+- 遵循PEP 8风格指南
+- 使用清晰、描述性的变量名
+- 对复杂操作添加注释
+- Jupyter笔记本应包含解释概念的Markdown单元格
 
-### JavaScript/Vue.js (Quiz App)
-- Follows Vue.js style guide
-- ESLint configuration in `quiz-app/package.json`
-- Run `npm run lint` to check and auto-fix issues
+### JavaScript/Vue.js（测验应用）
+- 遵循Vue.js风格指南
+- ESLint配置位于`quiz-app/package.json`
+- 运行`npm run lint`检查并自动修复问题
 
-### Documentation
-- Markdown files should be clear and well-structured
-- Include code examples in fenced code blocks
-- Use relative links for internal references
-- Follow existing formatting conventions
+### 文档
+- Markdown文件应清晰且结构良好
+- 在代码块中包含代码示例
+- 内部引用使用相对链接
+- 遵循现有的格式约定
 
-## Build and Deployment
+## 构建与部署
 
-### Quiz Application Deployment
+### 测验应用部署
 
-The quiz app can be deployed to Azure Static Web Apps:
+测验应用可以部署到Azure静态Web应用：
 
-1. **Prerequisites**:
-   - Azure account
-   - GitHub repository (already forked)
+1. **先决条件**：
+   - Azure账户
+   - GitHub仓库（已分叉）
 
-2. **Deploy to Azure**:
-   - Create Azure Static Web App resource
-   - Connect to GitHub repository
-   - Set app location: `/quiz-app`
-   - Set output location: `dist`
-   - Azure automatically creates GitHub Actions workflow
+2. **部署到Azure**：
+   - 创建Azure静态Web应用资源
+   - 连接到GitHub仓库
+   - 设置应用位置：`/quiz-app`
+   - 设置输出位置：`dist`
+   - Azure会自动创建GitHub Actions工作流
 
-3. **GitHub Actions Workflow**:
-   - Workflow file created at `.github/workflows/azure-static-web-apps-*.yml`
-   - Automatically builds and deploys on push to main branch
+3. **GitHub Actions工作流**：
+   - 工作流文件创建于`.github/workflows/azure-static-web-apps-*.yml`
+   - 推送到主分支时自动构建和部署
 
-### Documentation PDF
+### 文档PDF
 
-Generate PDF from documentation:
+从文档生成PDF：
 
 ```bash
 npm install
 npm run convert
 ```
 
-## Translation Workflow
+## 翻译工作流程
 
-**Important**: Translations are automated via GitHub Actions using Co-op Translator.
+**重要**：翻译通过GitHub Actions使用Co-op Translator自动完成。
 
-- Translations are auto-generated when changes are pushed to `main` branch
-- **DO NOT manually translate content** - the system handles this
-- Workflow defined in `.github/workflows/co-op-translator.yml`
-- Uses Azure AI/OpenAI services for translation
-- Supports 40+ languages
+- 当更改推送到`main`分支时，翻译会自动生成
+- **不要手动翻译内容** - 系统会处理
+- 工作流定义在`.github/workflows/co-op-translator.yml`
+- 使用Azure AI/OpenAI服务进行翻译
+- 支持40多种语言
 
-## Contributing Guidelines
+## 贡献指南
 
-### For Content Contributors
+### 针对内容贡献者
 
-1. **Fork the repository** and create a feature branch
-2. **Make changes to lesson content** if adding/updating lessons
-3. **Do not modify translated files** - they are auto-generated
-4. **Test your code** - ensure all notebook cells run successfully
-5. **Verify links and images** work correctly
-6. **Submit a pull request** with clear description
+1. **分叉仓库**并创建一个功能分支
+2. **修改课程内容**以添加或更新课程
+3. **不要修改翻译文件** - 它们是自动生成的
+4. **测试代码** - 确保所有笔记本单元格成功运行
+5. **验证链接和图片**是否正常工作
+6. **提交拉取请求**并提供清晰的描述
 
-### Pull Request Guidelines
+### 拉取请求指南
 
-- **Title format**: `[Section] Brief description of changes`
-  - Example: `[Regression] Fix typo in lesson 5`
-  - Example: `[Quiz-App] Update dependencies`
-- **Before submitting**:
-  - Ensure all notebook cells execute without errors
-  - Run `npm run lint` if modifying quiz-app
-  - Verify markdown formatting
-  - Test any new code examples
-- **PR must include**:
-  - Description of changes
-  - Reason for changes
-  - Screenshots if UI changes
-- **Code of Conduct**: Follow the [Microsoft Open Source Code of Conduct](CODE_OF_CONDUCT.md)
-- **CLA**: You will need to sign the Contributor License Agreement
+- **标题格式**：`[部分] 简要描述更改`
+  - 示例：`[回归] 修复第5课中的拼写错误`
+  - 示例：`[测验应用] 更新依赖项`
+- **提交前**：
+  - 确保所有笔记本单元格无错误执行
+  - 如果修改了测验应用，运行`npm run lint`
+  - 验证Markdown格式
+  - 测试任何新的代码示例
+- **拉取请求必须包括**：
+  - 更改描述
+  - 更改原因
+  - 如果有UI更改，提供截图
+- **行为准则**：遵循[Microsoft开源行为准则](CODE_OF_CONDUCT.md)
+- **CLA**：需要签署贡献者许可协议
 
-## Lesson Structure
+## 课程结构
 
-Each lesson follows a consistent pattern:
+每节课遵循一致的模式：
 
-1. **Pre-lecture quiz** - Test baseline knowledge
-2. **Lesson content** - Written instructions and explanations
-3. **Code demonstrations** - Hands-on examples in notebooks
-4. **Knowledge checks** - Verify understanding throughout
-5. **Challenge** - Apply concepts independently
-6. **Assignment** - Extended practice
-7. **Post-lecture quiz** - Assess learning outcomes
+1. **课前测验** - 测试基础知识
+2. **课程内容** - 书面说明和解释
+3. **代码演示** - 笔记本中的实践示例
+4. **知识检查** - 验证学习理解
+5. **挑战** - 独立应用概念
+6. **作业** - 扩展练习
+7. **课后测验** - 评估学习成果
 
-## Common Commands Reference
+## 常用命令参考
 
 ```bash
 # Python/Jupyter
@@ -274,58 +274,63 @@ git commit -m "Description"       # Commit changes
 git push origin feature/my-change # Push to remote
 ```
 
-## Additional Resources
+## 其他资源
 
-- **Microsoft Learn Collection**: [ML for Beginners modules](https://learn.microsoft.com/en-us/collections/qrqzamz1nn2wx3?WT.mc_id=academic-77952-bethanycheum)
-- **Quiz App**: [Online quizzes](https://ff-quizzes.netlify.app/en/ml/)
-- **Discussion Board**: [GitHub Discussions](https://github.com/microsoft/ML-For-Beginners/discussions)
-- **Video Walkthroughs**: [YouTube Playlist](https://aka.ms/ml-beginners-videos)
+- **Microsoft Learn集合**：[机器学习入门模块](https://learn.microsoft.com/en-us/collections/qrqzamz1nn2wx3?WT.mc_id=academic-77952-bethanycheum)
+- **测验应用**：[在线测验](https://ff-quizzes.netlify.app/en/ml/)
+- **讨论板**：[GitHub Discussions](https://github.com/microsoft/ML-For-Beginners/discussions)
+- **视频讲解**：[YouTube播放列表](https://aka.ms/ml-beginners-videos)
 
-## Key Technologies
+## 关键技术
 
-- **Python**: Primary language for ML lessons (Scikit-learn, Pandas, NumPy, Matplotlib)
-- **R**: Alternative implementation using tidyverse, tidymodels, caret
-- **Jupyter**: Interactive notebooks for Python lessons
-- **R Markdown**: Documents for R lessons
-- **Vue.js 3**: Quiz application framework
-- **Flask**: Web application framework for ML model deployment
-- **Docsify**: Documentation site generator
-- **GitHub Actions**: CI/CD and automated translations
+- **Python**：机器学习课程的主要语言（Scikit-learn, Pandas, NumPy, Matplotlib）
+- **R**：使用tidyverse, tidymodels, caret的替代实现
+- **Jupyter**：Python课程的交互式笔记本
+- **R Markdown**：R课程的文档
+- **Vue.js 3**：测验应用框架
+- **Flask**：用于机器学习模型部署的Web应用框架
+- **Docsify**：文档站点生成器
+- **GitHub Actions**：CI/CD和自动翻译
 
-## Security Considerations
+## 安全注意事项
 
-- **No secrets in code**: Never commit API keys or credentials
-- **Dependencies**: Keep npm and pip packages updated
-- **User input**: Flask web app examples include basic input validation
-- **Sensitive data**: Example datasets are public and non-sensitive
+- **代码中不包含秘密信息**：不要提交API密钥或凭证
+- **依赖项**：保持npm和pip包更新
+- **用户输入**：Flask Web应用示例包括基本输入验证
+- **敏感数据**：示例数据集是公开且无敏感信息的
 
-## Troubleshooting
+## 故障排除
 
-### Jupyter Notebooks
+### Jupyter笔记本
 
-- **Kernel issues**: Restart kernel if cells hang: Kernel → Restart
-- **Import errors**: Ensure all required packages are installed with pip
-- **Path issues**: Run notebooks from their containing directory
+- **内核问题**：如果单元格挂起，请重启内核：内核 → 重启
+- **导入错误**：确保使用pip安装了所有必需的包
+- **路径问题**：从笔记本所在目录运行笔记本
 
-### Quiz Application
+### 测验应用
 
-- **npm install fails**: Clear npm cache: `npm cache clean --force`
-- **Port conflicts**: Change port with: `npm run serve -- --port 8081`
-- **Build errors**: Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
+- **npm安装失败**：清除npm缓存：`npm cache clean --force`
+- **端口冲突**：更改端口：`npm run serve -- --port 8081`
+- **构建错误**：删除`node_modules`并重新安装：`rm -rf node_modules && npm install`
 
-### R Lessons
+### R课程
 
-- **Package not found**: Install with: `install.packages("package-name")`
-- **RMarkdown rendering**: Ensure rmarkdown package is installed
-- **Kernel issues**: May need to install IRkernel for Jupyter
+- **未找到包**：使用以下命令安装：`install.packages("package-name")`
+- **RMarkdown渲染问题**：确保安装了rmarkdown包
+- **内核问题**：可能需要为Jupyter安装IRkernel
 
-## Project-Specific Notes
+## 项目特定说明
 
-- This is primarily a **learning curriculum**, not production code
-- Focus is on **understanding ML concepts** through hands-on practice
-- Code examples prioritize **clarity over optimization**
-- Most lessons are **self-contained** and can be completed independently
-- **Solutions provided** but learners should attempt exercises first
-- Repository uses **Docsify** for web documentation without build step
-- **Sketchnotes** provide visual summaries of concepts
-- **Multi-language support** makes content globally accessible
+- 这主要是一个**学习课程**，而非生产代码
+- 重点是通过实践练习**理解机器学习概念**
+- 代码示例优先考虑**清晰性而非优化**
+- 大多数课程是**独立的**，可以单独完成
+- **提供解决方案**，但学习者应先尝试完成练习
+- 仓库使用**Docsify**生成Web文档，无需构建步骤
+- **手绘笔记**提供概念的可视化总结
+- **多语言支持**使内容全球可访问
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而产生的任何误解或误读不承担责任。

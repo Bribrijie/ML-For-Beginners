@@ -1,23 +1,28 @@
-## For Educators
+## 给教育工作者
 
-Would you like to use this curriculum in your classroom? Please feel free!
+您想在课堂上使用这套课程吗？请随意使用！
 
-In fact, you can use it within GitHub itself by using GitHub Classroom.
+事实上，您可以直接在 GitHub 上使用它，通过 GitHub Classroom 来实现。
 
-To do that, fork this repo. You are going to need to create a repo for each lesson, so you're going to need to extract each folder into a separate repo. That way, [GitHub Classroom](https://classroom.github.com/classrooms) can pick up each lesson separately. 
+为此，您需要 fork 此仓库。您需要为每节课创建一个单独的仓库，因此需要将每个文件夹提取到一个独立的仓库中。这样，[GitHub Classroom](https://classroom.github.com/classrooms) 就可以单独识别每节课。
 
-These [full instructions](https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classroom/) will give you an idea how to set up your classroom.
+这些[完整的说明](https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classroom/)可以帮助您了解如何设置您的课堂。
 
-## Using the repo as is
+## 按现有形式使用仓库
 
-If you would like to use this repo as it currently stands, without using GitHub Classroom, that can be done as well. You would need to communicate with your students which lesson to work through together.
+如果您希望按当前形式使用此仓库，而不使用 GitHub Classroom，也完全可以实现。您需要与您的学生沟通，共同决定要学习的课程。
 
-In an online format (Zoom, Teams, or other) you might form breakout rooms for the quizzes, and mentor students to help them get ready to learn. Then invite students to take the quizzes and submit their answers as 'issues' at a certain time. You might do the same with assignments, if you want students to work collaboratively out in the open.
+在在线教学环境中（如 Zoom、Teams 或其他平台），您可以为测验创建分组讨论室，并指导学生做好学习准备。然后邀请学生参加测验，并在规定时间内以“问题”的形式提交答案。如果您希望学生公开协作完成作业，也可以采用类似的方式。
 
-If you prefer a more private format, ask your students to fork the curriculum, lesson by lesson, to their own GitHub repos as private repos, and give you access. Then they can complete quizzes and assignments privately and submit them to you via issues on your classroom repo.
+如果您更倾向于私密的教学方式，可以让学生逐课 fork 课程到他们自己的 GitHub 私有仓库，并授予您访问权限。这样，他们可以私下完成测验和作业，并通过您课堂仓库中的问题提交给您。
 
-There are many ways to make this work in an online classroom format. Please let us know what works best for you!
+在在线课堂环境中，有很多方法可以让这套课程发挥作用。请告诉我们哪种方式最适合您！
 
-## Please give us your thoughts!
+## 请告诉我们您的想法！
 
-We want to make this curriculum work for you and your students. Please give us [feedback](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2humCsRZhxNuI79cm6n0hRUQzRVVU9VVlU5UlFLWTRLWlkyQUxORTg5WS4u).
+我们希望这套课程能够满足您和您学生的需求。请通过[反馈](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2humCsRZhxNuI79cm6n0hRUQzRVVU9VVlU5UlFLWTRLWlkyQUxORTg5WS4u)告诉我们您的意见！
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。

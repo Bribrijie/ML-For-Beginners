@@ -1,57 +1,57 @@
-# Build a Cuisine Recommender Web App
+# 构建一个美食推荐网页应用
 
-In this lesson, you will build a classification model using some of the techniques you have learned in previous lessons and with the delicious cuisine dataset used throughout this series. In addition, you will build a small web app to use a saved model, leveraging Onnx's web runtime.
+在本课中，您将使用之前课程中学到的一些技术以及贯穿整个系列的美食数据集，构建一个分类模型。此外，您还将构建一个小型网页应用来使用保存的模型，并利用 Onnx 的网页运行时。
 
-One of the most useful practical uses of machine learning is building recommendation systems, and you can take the first step in that direction today!
+机器学习最实用的用途之一是构建推荐系统，今天您可以迈出这一方向的第一步！
 
-[![Presenting this web app](https://img.youtube.com/vi/17wdM9AHMfg/0.jpg)](https://youtu.be/17wdM9AHMfg "Applied ML")
+[![展示此网页应用](https://img.youtube.com/vi/17wdM9AHMfg/0.jpg)](https://youtu.be/17wdM9AHMfg "应用机器学习")
 
-> 🎥 Click the image above for a video: Jen Looper builds a web app using classified cuisine data
+> 🎥 点击上方图片观看视频：Jen Looper 使用分类美食数据构建网页应用
 
-## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+## [课前测验](https://ff-quizzes.netlify.app/en/ml/)
 
-In this lesson you will learn:
+在本课中，您将学习：
 
-- How to build a model and save it as an Onnx model
-- How to use Netron to inspect the model
-- How to use your model in a web app for inference
+- 如何构建模型并将其保存为 Onnx 模型
+- 如何使用 Netron 检查模型
+- 如何在网页应用中使用您的模型进行推理
 
-## Build your model
+## 构建您的模型
 
-Building applied ML systems is an important part of leveraging these technologies for your business systems. You can use models within your web applications (and thus use them in an offline context if needed) by using Onnx.
+构建应用型机器学习系统是将这些技术应用于业务系统的重要部分。通过使用 Onnx，您可以在网页应用中使用模型（因此在需要时也可以离线使用）。
 
-In a [previous lesson](../../3-Web-App/1-Web-App/README.md), you built a Regression model about UFO sightings, "pickled" it, and used it in a Flask app. While this architecture is very useful to know, it is a full-stack Python app, and your requirements may include the use of a JavaScript application. 
+在[之前的课程](../../3-Web-App/1-Web-App/README.md)中，您构建了一个关于 UFO 目击事件的回归模型，将其“pickle”保存，并在 Flask 应用中使用。虽然这种架构非常有用，但它是一个全栈 Python 应用，而您的需求可能包括使用 JavaScript 应用。
 
-In this lesson, you can build a basic JavaScript-based system for inference. First, however, you need to train a model and convert it for use with Onnx.
+在本课中，您可以构建一个基于 JavaScript 的基础推理系统。不过，首先需要训练一个模型并将其转换为 Onnx 格式。
 
-## Exercise - train classification model
+## 练习 - 训练分类模型
 
-First, train a classification model using the cleaned cuisines dataset we used. 
+首先，使用我们之前清理过的美食数据集训练一个分类模型。
 
-1. Start by importing useful libraries:
+1. 首先导入有用的库：
 
     ```python
     !pip install skl2onnx
     import pandas as pd 
     ```
 
-    You need '[skl2onnx](https://onnx.ai/sklearn-onnx/)' to help convert your Scikit-learn model to Onnx format.
+    您需要 '[skl2onnx](https://onnx.ai/sklearn-onnx/)' 来帮助将 Scikit-learn 模型转换为 Onnx 格式。
 
-1. Then, work with your data in the same way you did in previous lessons, by reading a CSV file using `read_csv()`:
+1. 然后，像之前课程中一样使用 `read_csv()` 读取 CSV 文件来处理数据：
 
     ```python
-    data = pd.read_csv('../data/cleaned_cuisines.csv')
+    data = pd.read_csv('../../data/cleaned_cuisines.csv')
     data.head()
     ```
 
-1. Remove the first two unnecessary columns and save the remaining data as 'X':
+1. 删除前两列不必要的数据，并将剩余数据保存为 'X'：
 
     ```python
     X = data.iloc[:,2:]
     X.head()
     ```
 
-1. Save the labels as 'y':
+1. 将标签保存为 'y'：
 
     ```python
     y = data[['cuisine']]
@@ -59,11 +59,11 @@ First, train a classification model using the cleaned cuisines dataset we used.
     
     ```
 
-### Commence the training routine
+### 开始训练流程
 
-We will use the 'SVC' library which has good accuracy.
+我们将使用具有良好准确性的 'SVC' 库。
 
-1. Import the appropriate libraries from Scikit-learn:
+1. 从 Scikit-learn 导入相关库：
 
     ```python
     from sklearn.model_selection import train_test_split
@@ -72,32 +72,32 @@ We will use the 'SVC' library which has good accuracy.
     from sklearn.metrics import accuracy_score,precision_score,confusion_matrix,classification_report
     ```
 
-1. Separate training and test sets:
+1. 分离训练集和测试集：
 
     ```python
     X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3)
     ```
 
-1. Build an SVC Classification model as you did in the previous lesson:
+1. 像之前课程中一样构建一个 SVC 分类模型：
 
     ```python
     model = SVC(kernel='linear', C=10, probability=True,random_state=0)
     model.fit(X_train,y_train.values.ravel())
     ```
 
-1. Now, test your model, calling `predict()`:
+1. 现在，测试您的模型，调用 `predict()`：
 
     ```python
     y_pred = model.predict(X_test)
     ```
 
-1. Print out a classification report to check the model's quality:
+1. 打印分类报告以检查模型质量：
 
     ```python
     print(classification_report(y_test,y_pred))
     ```
 
-    As we saw before, the accuracy is good:
+    如我们之前所见，准确性很好：
 
     ```output
                     precision    recall  f1-score   support
@@ -113,11 +113,11 @@ We will use the 'SVC' library which has good accuracy.
     weighted avg       0.79      0.79      0.79      1199
     ```
 
-### Convert your model to Onnx
+### 将模型转换为 Onnx
 
-Make sure to do the conversion with the proper Tensor number. This dataset has 380 ingredients listed, so you need to notate that number in `FloatTensorType`:
+确保使用正确的张量数量进行转换。此数据集列出了 380 种食材，因此您需要在 `FloatTensorType` 中注明该数量：
 
-1. Convert using a tensor number of 380.
+1. 使用张量数量 380 进行转换。
 
     ```python
     from skl2onnx import convert_sklearn
@@ -127,7 +127,7 @@ Make sure to do the conversion with the proper Tensor number. This dataset has 3
     options = {id(model): {'nocl': True, 'zipmap': False}}
     ```
 
-1. Create the onx and store as a file **model.onnx**:
+1. 创建 onx 并保存为文件 **model.onnx**：
 
     ```python
     onx = convert_sklearn(model, initial_types=initial_type, options=options)
@@ -135,25 +135,25 @@ Make sure to do the conversion with the proper Tensor number. This dataset has 3
         f.write(onx.SerializeToString())
     ```
 
-    > Note, you can pass in [options](https://onnx.ai/sklearn-onnx/parameterized.html) in your conversion script. In this case, we passed in 'nocl' to be True and 'zipmap' to be False. Since this is a classification model, you have the option to remove ZipMap which produces a list of dictionaries (not necessary). `nocl` refers to class information being included in the model. Reduce your model's size by setting `nocl` to 'True'. 
+    > 注意，您可以在转换脚本中传递[选项](https://onnx.ai/sklearn-onnx/parameterized.html)。在本例中，我们将 'nocl' 设置为 True，将 'zipmap' 设置为 False。由于这是一个分类模型，您可以选择移除 ZipMap，它会生成一个字典列表（不必要）。`nocl` 指的是模型中是否包含类别信息。通过将 `nocl` 设置为 'True' 来减小模型的大小。
 
-Running the entire notebook will now build an Onnx model and save it to this folder.
+运行整个笔记本后，您将构建一个 Onnx 模型并将其保存到此文件夹中。
 
-## View your model
+## 查看您的模型
 
-Onnx models are not very visible in Visual Studio code, but there's a very good free software that many researchers use to visualize the model to ensure that it is properly built. Download [Netron](https://github.com/lutzroeder/Netron) and  open your model.onnx file. You can see your simple model visualized, with its 380 inputs and classifier listed:
+Onnx 模型在 Visual Studio Code 中不太直观，但有一个非常好的免费软件，许多研究人员使用它来可视化模型，以确保模型构建正确。下载 [Netron](https://github.com/lutzroeder/Netron) 并打开您的 model.onnx 文件。您可以看到您的简单模型被可视化，包含 380 个输入和分类器：
 
-![Netron visual](images/netron.png)
+![Netron 可视化](images/netron.png)
 
-Netron is a helpful tool to view your models.
+Netron 是一个查看模型的有用工具。
 
-Now you are ready to use this neat model in a web app. Let's build an app that will come in handy when you look in your refrigerator and try to figure out which combination of your leftover ingredients you can use to cook a given cuisine, as determined by your model.
+现在您可以在网页应用中使用这个简洁的模型了。让我们构建一个应用，当您查看冰箱并试图决定如何利用剩余食材制作某种美食时，它会派上用场。
 
-## Build a recommender web application
+## 构建推荐网页应用
 
-You can use your model directly in a web app. This architecture also allows you to run it locally and even offline if needed. Start by creating an `index.html` file in the same folder where you stored your `model.onnx` file.
+您可以直接在网页应用中使用您的模型。这种架构还允许您在本地运行，甚至在需要时离线运行。首先，在存储 `model.onnx` 文件的同一文件夹中创建一个 `index.html` 文件。
 
-1. In this file _index.html_, add the following markup:
+1. 在此文件 _index.html_ 中，添加以下标记：
 
     ```html
     <!DOCTYPE html>
@@ -167,7 +167,7 @@ You can use your model directly in a web app. This architecture also allows you 
     </html>
     ```
 
-1. Now, working within the `body` tags, add a little markup to show a list of checkboxes reflecting some ingredients:
+1. 现在，在 `body` 标签内添加一些标记以显示一些食材的复选框列表：
 
     ```html
     <h1>Check your refrigerator. What can you create?</h1>
@@ -212,19 +212,19 @@ You can use your model directly in a web app. This architecture also allows you 
             </div> 
     ```
 
-    Notice that each checkbox is given a value.  This reflects the index where the ingredient is found according to the dataset. Apple, for example, in this alphabetic list, occupies the fifth column, so its value is '4' since we start counting at 0. You can consult the [ingredients spreadsheet](../data/ingredient_indexes.csv) to discover a given ingredient's index.
+    注意，每个复选框都被赋予了一个值。这反映了食材在数据集中的索引位置。例如，苹果在这个按字母顺序排列的列表中占据第五列，因此其值为 '4'（因为我们从 0 开始计数）。您可以查阅 [ingredients spreadsheet](../data/ingredient_indexes.csv) 来找到某个食材的索引。
 
-    Continuing your work in the index.html file, add a script block where the model is called after the final closing `</div>`. 
+    继续在 index.html 文件中工作，在最后一个关闭的 `</div>` 后添加一个脚本块，其中调用了模型。
 
-1. First, import the [Onnx Runtime](https://www.onnxruntime.ai/):
+1. 首先，导入 [Onnx Runtime](https://www.onnxruntime.ai/)：
 
     ```html
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.9.0/dist/ort.min.js"></script> 
     ```
 
-    > Onnx Runtime is used to enable running your Onnx models across a wide range of hardware platforms, including optimizations and an API to use.
+    > Onnx Runtime 用于支持在广泛的硬件平台上运行您的 Onnx 模型，包括优化和使用的 API。
 
-1. Once the Runtime is in place, you can call it:
+1. 一旦 Runtime 就位，您可以调用它：
 
     ```html
     <script>
@@ -276,39 +276,45 @@ You can use your model directly in a web app. This architecture also allows you 
     </script>
     ```
 
-In this code, there are several things happening:
+在此代码中，发生了以下几件事：
 
-1. You created an array of 380 possible values (1 or 0) to be set and sent to the model for inference, depending on whether an ingredient checkbox is checked.
-2. You created an array of checkboxes and a way to determine whether they were checked in an `init` function that is called when the application starts. When a checkbox is checked, the `ingredients` array is altered to reflect the chosen ingredient.
-3. You created a `testCheckboxes` function that checks whether any checkbox was checked.
-4. You use `startInference` function when the button is pressed and, if any checkbox is checked, you start inference.
-5. The inference routine includes:
-   1. Setting up an asynchronous load of the model
-   2. Creating a Tensor structure to send to the model
-   3. Creating 'feeds' that reflects the `float_input` input that you created when training your model (you can use Netron to verify that name)
-   4. Sending these 'feeds' to the model and waiting for a response
+1. 您创建了一个包含 380 个可能值（1 或 0）的数组，用于根据食材复选框是否被选中来设置并发送到模型进行推理。
+2. 您创建了一个复选框数组以及一个在应用启动时确定它们是否被选中的 `init` 函数。当复选框被选中时，`ingredients` 数组会被修改以反映所选食材。
+3. 您创建了一个 `testCheckboxes` 函数，用于检查是否有复选框被选中。
+4. 您使用 `startInference` 函数，当按钮被按下时，如果有复选框被选中，您就开始推理。
+5. 推理流程包括：
+   1. 设置模型的异步加载
+   2. 创建一个发送到模型的张量结构
+   3. 创建反映您在训练模型时创建的 `float_input` 输入的 'feeds'（您可以使用 Netron 验证该名称）
+   4. 将这些 'feeds' 发送到模型并等待响应
 
-## Test your application
+## 测试您的应用
 
-Open a terminal session in Visual Studio Code in the folder where your index.html file resides. Ensure that you have [http-server](https://www.npmjs.com/package/http-server) installed globally, and type `http-server` at the prompt. A localhost should open and you can view your web app. Check what cuisine is recommended based on various ingredients:
+在存放 index.html 文件的文件夹中打开 Visual Studio Code 的终端会话。确保您已全局安装 [http-server](https://www.npmjs.com/package/http-server)，然后在提示符下输入 `http-server`。一个本地主机将打开，您可以查看您的网页应用。根据各种食材检查推荐的美食：
 
-![ingredient web app](images/web-app.png)
+![食材网页应用](images/web-app.png)
 
-Congratulations, you have created a 'recommendation' web app  with a few fields. Take some time to build out this system!
-## 🚀Challenge
+恭喜，您已经创建了一个带有几个字段的“推荐”网页应用。花点时间完善这个系统吧！
 
-Your web app is very minimal, so continue to build it out using ingredients and their indexes from the [ingredient_indexes](../data/ingredient_indexes.csv) data. What flavor combinations work to create a given national dish?
+## 🚀挑战
 
-## [Post-lecture quiz](https://ff-quizzes.netlify.app/en/ml/)
+您的网页应用非常简约，因此请继续使用 [ingredient_indexes](../data/ingredient_indexes.csv) 数据中的食材及其索引来完善它。哪些风味组合可以制作出某种国家菜肴？
 
-## Review & Self Study
+## [课后测验](https://ff-quizzes.netlify.app/en/ml/)
 
-While this lesson just touched on the utility of creating a recommendation system for food ingredients, this area of ML applications is very rich in examples. Read some more about how these systems are built:
+## 复习与自学
+
+虽然本课只是简单介绍了创建食材推荐系统的实用性，但这一领域的机器学习应用有许多丰富的示例。阅读更多关于这些系统如何构建的内容：
 
 - https://www.sciencedirect.com/topics/computer-science/recommendation-engine
 - https://www.technologyreview.com/2014/08/25/171547/the-ultimate-challenge-for-recommendation-engines/
 - https://www.technologyreview.com/2015/03/23/168831/everything-is-a-recommendation/
 
-## Assignment 
+## 作业
 
-[Build a new recommender](assignment.md)
+[构建一个新的推荐系统](assignment.md)
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。对于因使用本翻译而引起的任何误解或误读，我们概不负责。

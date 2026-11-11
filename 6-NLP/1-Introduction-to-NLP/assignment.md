@@ -1,11 +1,16 @@
-# Search for a bot
+# 寻找一个机器人
 
-## Instructions
+## 说明
 
-Bots are everywhere. Your assignment: find one and adopt it! You can find them on web sites, in banking applications, and on the phone, for example when you call financial services companies for advice or account information. Analyze the bot and see if you can confuse it. If you can confuse the bot, why do you think that happened? Write a short paper about your experience.
+机器人无处不在。你的任务是：找到一个并与它互动！你可以在网站上、银行应用程序中，或者通过电话找到它，例如，当你拨打金融服务公司的电话咨询或查询账户信息时。分析这个机器人，看看你是否能让它困惑。如果你能让机器人困惑，为什么会发生这种情况？写一篇简短的文章，描述你的体验。
 
-## Rubric
+## 评分标准
 
-| Criteria | Exemplary                                                                                                     | Adequate                                     | Needs Improvement     |
-| -------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | --------------------- |
-|          | A full  page paper is written, explaining the presumed bot architecture and outlining your experience with it | A paper is incomplete or not well researched | No paper is submitted |
+| 标准     | 优秀                                                                                                     | 合格                                     | 需要改进             |
+| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------- |
+|          | 撰写了一整页文章，解释了假定的机器人架构并概述了与它的互动体验                                           | 文章不完整或研究不充分                   | 未提交文章           |
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。对于因使用本翻译而引起的任何误解或误读，我们概不负责。

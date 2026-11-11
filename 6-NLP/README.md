@@ -1,24 +1,29 @@
-# Getting started with natural language processing
+# 开始学习自然语言处理
 
-Natural language processing (NLP) is the ability of a computer program to understand human language as it is spoken and written -- referred to as natural language. It is a component of artificial intelligence (AI). NLP has existed for more than 50 years and has roots in the field of linguistics. The whole field is directed at helping machines understand and process the human language. This can then be used to perform tasks like spell check or machine translation. It has a variety of real-world applications in a number of fields, including medical research, search engines and business intelligence.
+自然语言处理（NLP）是指计算机程序理解人类语言（包括口语和书面语）的能力——即所谓的自然语言。它是人工智能（AI）的一个组成部分。自然语言处理已有超过50年的历史，其根源可以追溯到语言学领域。整个领域的目标是帮助机器理解和处理人类语言。这项技术可以用于执行诸如拼写检查或机器翻译等任务。它在许多领域都有实际应用，包括医学研究、搜索引擎和商业智能。
 
-## Regional topic: European languages and literature and romantic hotels of Europe ❤️
+## 地区主题：欧洲语言文学与浪漫酒店 ❤️
 
-In this section of the curriculum, you will be introduced to one of the most widespread uses of machine learning: natural language processing (NLP). Derived from computational linguistics, this category of artificial intelligence is the bridge between humans and machines via voice or textual communication.
+在本课程的这一部分中，您将了解机器学习最广泛的应用之一：自然语言处理（NLP）。这一人工智能类别源于计算语言学，是通过语音或文本交流连接人类与机器的桥梁。
 
-In these lessons we'll learn the basics of NLP by building small conversational bots to learn how machine learning aids in making these conversations more and more 'smart'. You'll travel back in time, chatting with Elizabeth Bennett and Mr. Darcy from Jane Austen's classic novel, **Pride and Prejudice**, published in 1813. Then, you'll further your knowledge by learning about sentiment analysis via hotel reviews in Europe.
+在这些课程中，我们将通过构建小型对话机器人来学习NLP的基础知识，了解机器学习如何帮助使这些对话变得越来越“智能”。您将穿越时光，与简·奥斯汀1813年出版的经典小说《傲慢与偏见》中的伊丽莎白·班内特和达西先生进行对话。随后，您将通过学习欧洲酒店评论中的情感分析进一步加深知识。
 
-![Pride and Prejudice book and tea](images/p&p.jpg)
-> Photo by <a href="https://unsplash.com/@elaineh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elaine Howlin</a> on <a href="https://unsplash.com/s/photos/pride-and-prejudice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+![傲慢与偏见书籍与茶](../translated_images/zh-CN/p&p.279f1c49ecd88941.webp)
+> 图片由 <a href="https://unsplash.com/@elaineh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elaine Howlin</a> 提供，来自 <a href="https://unsplash.com/s/photos/pride-and-prejudice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
-## Lessons
+## 课程
 
-1. [Introduction to natural language processing](1-Introduction-to-NLP/README.md)
-2. [Common NLP tasks and techniques](2-Tasks/README.md)
-3. [Translation and sentiment analysis with machine learning](3-Translation-Sentiment/README.md)
-4. [Preparing your data](4-Hotel-Reviews-1/README.md)
-5. [NLTK for Sentiment Analysis](5-Hotel-Reviews-2/README.md)
+1. [自然语言处理简介](1-Introduction-to-NLP/README.md)
+2. [常见的NLP任务与技术](2-Tasks/README.md)
+3. [机器学习中的翻译与情感分析](3-Translation-Sentiment/README.md)
+4. [准备您的数据](4-Hotel-Reviews-1/README.md)
+5. [使用NLTK进行情感分析](5-Hotel-Reviews-2/README.md)
 
-## Credits 
+## 致谢
 
-These natural language processing lessons were written with ☕ by [Stephen Howell](https://twitter.com/Howell_MSFT)
+这些自然语言处理课程由 [Stephen Howell](https://twitter.com/Howell_MSFT) 倾情创作 ☕
+
+---
+
+**免责声明**：  
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原始语言的文档作为权威来源。对于关键信息，建议使用专业人工翻译。对于因使用本翻译而引起的任何误解或误读，我们概不负责。

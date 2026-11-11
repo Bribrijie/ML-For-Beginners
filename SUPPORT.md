@@ -1,18 +1,20 @@
-# Support
-## How to file issues and get help  
+# 支持
+## 如何提交问题并获得帮助  
 
-Before filing an issue, please check our [Troubleshooting Guide](TROUBLESHOOTING.md) for solutions to common problems with installation, setup, and running lessons.
+在提交问题之前，请先查看我们的 [故障排除指南](TROUBLESHOOTING.md)，以解决安装、设置和运行课程时的常见问题。
 
-This project uses GitHub Issues to track bugs and feature requests. Please search the existing 
-issues before filing new issues to avoid duplicates.  For new issues, file your bug or 
-feature request as a new Issue.
+此项目使用 GitHub Issues 来跟踪错误和功能请求。在提交新问题之前，请先搜索现有问题以避免重复。对于新问题，请将您的错误或功能请求作为新问题提交。
 
-For help and questions about using this project, you can also:
-- Check the [Troubleshooting Guide](TROUBLESHOOTING.md)
-- Visit our [Discord Discussions #ml-for-beginners channel](https://aka.ms/foundry/discord)
-- File an issue
+如果您需要帮助或对使用此项目有疑问，也可以：
+- 查看 [故障排除指南](TROUBLESHOOTING.md)
+- 访问我们的 [Discord 讨论 #ml-for-beginners 频道](https://aka.ms/foundry/discord)
+- 提交问题
 
-## Microsoft Support Policy  
+## Microsoft 支持政策  
 
-Support for this repository is limited to the resources listed above.
+对该存储库的支持仅限于上述资源。
 
+---
+
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。
